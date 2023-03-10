@@ -1,0 +1,13 @@
+name = "Open5e"
+uuid = "40859a6f-14d6-42f7-98c9-9ac28e554a32"
+authors = ["Eric Ekholm"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
