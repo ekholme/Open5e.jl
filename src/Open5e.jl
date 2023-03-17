@@ -1,5 +1,6 @@
 module Open5e
 
-# Write your package code here.
+include("monster_types.jl")
+
 
 end
