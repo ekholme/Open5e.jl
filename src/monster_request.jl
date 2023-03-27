@@ -1,6 +1,7 @@
 using HTTP
 using JSON3
 using DataFrames
+using Open5e
 
 base_url = "https://api.open5e.com/monsters/"
 

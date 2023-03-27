@@ -54,7 +54,7 @@ mutable struct SpecialAbilitie
     SpecialAbilitie() = new()
 end
 
-mutable struct Result
+mutable struct Monster
     slug::String
     name::String
     size::String
@@ -99,14 +99,14 @@ mutable struct Result
     document__slug::String
     document__title::String
     document__license_url::String
-    Result() = new()
+    Monster() = new()
 end
 
 mutable struct MonsterReq
     count::Int64
     next::Union{String, Nothing}
     previous::Union{Nothing, String}
-    results::Array{Result, 1}
+    results::Array{Monster, 1}
     MonsterReq() = new()
 end
 
@@ -116,6 +116,6 @@ StructTypes.StructType(::Type{Action}) = StructTypes.Mutable()
 StructTypes.StructType(::Type{Reaction}) = StructTypes.Mutable()
 StructTypes.StructType(::Type{LegendaryAction}) = StructTypes.Mutable()
 StructTypes.StructType(::Type{SpecialAbilitie}) = StructTypes.Mutable()
-StructTypes.StructType(::Type{Result}) = StructTypes.Mutable()
+StructTypes.StructType(::Type{Monster}) = StructTypes.Mutable()
 StructTypes.StructType(::Type{MonsterReq}) = StructTypes.Mutable()
 
