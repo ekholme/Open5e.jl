@@ -1,4 +1,3 @@
-import StructTypes
 
 mutable struct Speed
     swim::Union{Nothing, Int64}
